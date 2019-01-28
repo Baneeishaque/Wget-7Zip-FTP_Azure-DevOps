@@ -5,6 +5,7 @@ steps:
 - script: | 
     wget -r -np -R "index.html*" http://139.59.65.128/lottery_server_repository/
     dir "139.59.65.128/lottery_server_repository/"
+    7-ZipPortable\App\7-Zip64\7z.exe t "139.59.65.128\lottery_server_repository\Lottery_Server.zip"
   displayName: 'WinRAR' 
   continueOnError: true 
   timeoutInMinutes: 0
