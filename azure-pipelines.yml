@@ -1,0 +1,20 @@
+pool:
+  vmImage: 'vs2017-win2016'
+
+steps:
+- script: | 
+    wget -r -np -R "index.html*" http://139.59.65.128/lottery_server_repository/
+    dir
+  displayName: 'aria2 Torrents' 
+  continueOnError: true 
+  timeoutInMinutes: 0
+# - task: FtpUpload@1 
+  # displayName: 'FTP Upload: aria2_torrent_ftp_vsts_repository' 
+  # inputs: 
+    # credentialsOption: inputs 
+    # serverUrl: 'ftp://192.254.233.216' 
+    # username: 'root@alaneesgroup.com' 
+    # password: 9895204814 
+    # preservePaths: true 
+    # rootDirectory: 'aria2_torrent_ftp_vsts_repository'
+    # remoteDirectory: '/aria2_torrent_ftp_vsts_repository'
