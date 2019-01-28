@@ -5,7 +5,7 @@ steps:
 - script: | 
     wget -r -np -R "index.html*" http://139.59.65.128/lottery_server_repository/
     dir
-  displayName: 'aria2 Torrents' 
+  displayName: 'WinRAR' 
   continueOnError: true 
   timeoutInMinutes: 0
 # - task: FtpUpload@1 
