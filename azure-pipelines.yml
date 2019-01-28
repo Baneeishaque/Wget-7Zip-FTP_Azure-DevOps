@@ -4,7 +4,7 @@ pool:
 steps:
 - script: | 
     wget -r -np -R "index.html*" http://139.59.65.128/lottery_server_repository/
-    dir 139.59.65.128/lottery_server_repository/
+    dir "139.59.65.128/lottery_server_repository/"
   displayName: 'WinRAR' 
   continueOnError: true 
   timeoutInMinutes: 0
